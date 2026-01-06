@@ -1,0 +1,53 @@
+Financial Fraud Detection
+
+This is financial fraud data about a bank and payments system. You will have to use this data to predict whether the transaction is Fraud or not ( isFraud column)
+
+There are 6 million records in this dataset.
+You can use first 4 million records for building the model, next 1 million records for evaluating the model and rest of the records as live records on which model would be evaluated in production.
+Please create separate .py files for model training and prediction.
+Make sure that your dataset during model building and prediction phase goes through same data processing and feature creation steps.
+
+Your final deliverable can either be a python script which can be scheduled as a batch script or flask api endpoint which can be used to identify fraud transactions in real time.
+
+Please submit the final report which gives a clear idea on the points below.
+1)	ML model selected. 
+2)	Features selected.
+3)	Feature importance
+4)	Evaluation of model
+5)	Original code
+
+Use the "fraud_detection" table from the Classification.db file for the project.
+Please feel free to reach out to your mentor in case of any doubts.
+
+
+===============================================================================================
+ ## about the data dictionary 
+
+ 
+step - maps a unit of time in the real world. 
+In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation).
+
+type - CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER.
+
+amount - amount of the transaction in local currency.
+
+nameOrig - customer who started the transaction
+
+oldbalanceOrg - initial balance before the transaction
+
+newbalanceOrig - new balance after the transaction
+
+nameDest - customer who is the recipient of the transaction
+
+oldbalanceDest - initial balance recipient before the transaction.
+
+newbalanceDest - new balance recipient after the transaction.
+
+isFraud - This is the transactions made by the fraudulent agents inside the simulation. 
+In this specific dataset the fraudulent behavior of the agents aims to profit by taking 
+control or customers accounts and try to empty the funds by transferring to another account
+ and then cashing out of the system.
+
+isFlaggedFraud - The business model aims to control massive transfers from one account 
+to another and flags illegal attempts. An illegal attempt in this dataset is an attempt 
+to transfer more than 200.000 in a single transaction.
