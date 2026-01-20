@@ -235,3 +235,6 @@ artifacts/
 mlruns/
 wandb/
 tensorboard/
+
+logs
+param.yaml
